@@ -37,7 +37,7 @@ app.get("/", async (req, res) => {
                     Accept: "*/*",
                     "User-Agent":
                         "com.tappz.aichat/1.2.2 iPhone/16.3.1 hw/iPhone12_5",
-                    "Accept-Language": "en",
+                    "Accept-Language": "id",
                     "Content-Type": "application/json; charset=UTF-8",
                 },
             }
@@ -73,7 +73,7 @@ app.post("/", async (req, res) => {
                     Accept: "*/*",
                     "User-Agent":
                         "com.tappz.aichat/1.2.2 iPhone/16.3.1 hw/iPhone12_5",
-                    "Accept-Language": "en",
+                    "Accept-Language": "id",
                     "Content-Type": "application/json; charset=UTF-8",
                 },
             }
@@ -91,6 +91,6 @@ app.use((err, req, res, next) => {
     sendResponse(res, 500, "Something broke!");
 });
 
-app.listen(3000, () => {
-    console.log("ChatGPT API is running on port 3000");
+app.listen(8080, () => {
+    console.log("ChatGPT API is running on port 8080");
 });
